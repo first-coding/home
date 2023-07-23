@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HomesteadHive - Brand Story</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="logo">HomesteadHive</div>
+    <ul class="nav-links">
+      <li><a href="#" data-page="home" class="nav-link">Home</a></li>
+      <li><a href="#" data-page="about" class="nav-link">About</a></li>
+      <li><a href="#" data-page="contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- 品牌故事内容 -->
+  <section class="brand-story">
+    <h2>Our Brand Story</h2>
+    <p>
+      数字：2009年<br>
+      日期：2023年7月
+    </p>
+    <p>
+      在2009年的一个夏日傍晚，两位年轻的大学生，杰克和艾米莉，一同踏上了一次寻找探险的旅程。他们对自然的热爱和对未知世界的好奇心推动着他们前行，寻找新奇的体验和独特的冒险。而就在这次旅途中，他们在一个偏远的小山村里发现了一座被时间遗忘的迷人民宿。
+    </p>
+    <!-- 更多内容省略 -->
+
+    <!-- 返回主页按钮 -->
+    <a href="#" data-page="home" class="back-to-home">Back to Homepage</a>
+  </section>
+
+  <!-- 底部导航栏 -->
+  <footer class="footer">
+    <ul class="footer-links">
+      <li><a href="#" data-page="about" class="nav-link">About Us</a></li>
+      <li><a href="#" data-page="contact" class="nav-link">Contact Us</a></li>
+      <li><a href="#" data-page="terms" class="nav-link">Terms of Service</a></li>
+    </ul>
+    <p>&copy; 2023 HomesteadHive. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript代码，用于实现页面切换效果 -->
+  <script>
+    // 监听导航栏链接点击事件
+    const navLinks = document.querySelectorAll('.nav-link');
+    for (const link of navLinks) {
+      link.addEventListener('click', (event) => {
+        event.preventDefault();
+        const page = event.target.getAttribute('data-page');
+        showPage(page);
+      });
+    }
+
+    // 显示对应页面
+    function showPage(page) {
+      const pages = document.querySelectorAll('section');
+      for (const p of pages) {
+        p.style.display = 'none';
+      }
+
+      const targetPage = document.querySelector(`.${page}`);
+      targetPage.style.display = 'block';
+    }
+
+    // 默认显示品牌故事页面
+    showPage('brand-story');
+  </script>
+</body>
+</html>

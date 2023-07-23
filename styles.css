@@ -1,0 +1,247 @@
+/* 样式优化 */
+
+body {
+  font-family: 'Microsoft YaHei';
+  margin: 0;
+  padding: 0;
+}
+
+/* CSS样式 */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  height: 60px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;  
+}
+
+nav {
+  flex: 1;  
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+  margin: 0 10px;
+  transition: all 0.2s;
+}
+
+nav a:hover {
+  background: #eee;
+}
+
+
+.header-cta button {
+  background: #007bff;
+  color: #fff; 
+  border: none;
+  border-radius: 4px;
+  padding: 12px 24px;
+  background: linear-gradient(to right, #72b626, #629a43); 
+}
+
+.header-cta button:hover {
+  background: #72b626; 
+}
+
+.logo img {
+  height: 60px;
+  width: 145px;
+}
+
+@media (max-width: 480px) {
+  .logo img {
+    height: 20px;
+    width: 97px;
+  }
+}
+.swiper-container{
+  position:relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(5px);
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 60px;
+}
+.swiper, .swiper-slide {
+  width: 100%;
+  height: 100vh; 
+}
+
+.swiper-slide img {
+  z-index: 5; 
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.search {
+  padding: 30px;
+  display: flex;
+}
+
+.search input {
+  flex-grow: 1;
+  padding: 15px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  transition: 0.3s;
+}
+
+.search input:focus {
+  border-color: #f15a29;
+} 
+
+.listings .listing {
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);  
+}
+
+footer {
+  background: #f5f5f5; 
+  color: #666;
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+}
+
+/* 房源样式 */
+
+.listing {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.listing img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.listing .type {
+  display: flex;
+  align-items: center;
+}
+
+.listing .type img {
+  width: 20px;
+  margin-right: 5px;
+}
+
+.expand-btn {
+  background: url('arrow.svg');
+  transition: transform 0.3s;  
+}
+
+.expand-btn.active {
+  transform: rotate(90deg);
+}
+
+/* 自定义滚动条 */
+.listings::-webkit-scrollbar {
+  width: 10px;
+}
+/* 房源标签 */
+.tag {
+  padding: 3px 10px;
+  border-radius: 5px;
+  background: linear-gradient(to right, #f78ca0, #f9748f);
+}
+
+/* 瀑布流布局 */
+.listings {
+  column-count: 3;
+  column-gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .listings {
+    column-count: 1;  
+  }
+}
+
+/* 动画 */
+.listing {
+  transform: scale(0.9);
+  transition: 0.3s;
+}
+
+.listing:hover {
+  transform: scale(1);
+}
+.listing h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: 'Arial';
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; 
+}
+
+.info img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  filter: invert(0.6) sepia(1) saturate(5) hue-rotate(345deg);
+}
+
+.price {
+  color: #ff5a5f;
+  font-weight: bold;
+  margin-bottom: 10px;
+}  
+
+.host {
+  display: flex;
+  align-items: center;
+}
+
+.host img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px; 
+}
+
+
+@media (max-width: 768px) {
+  /* 响应式样式 */
+}
+
