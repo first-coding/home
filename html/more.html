@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>民宿首页</title>
+  <link rel="stylesheet" href="../css/more_style.css">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+
+  <div class="banner">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="../img/img1.jpg">
+        </div>
+        <div class="swiper-slide">
+          <img src="../img/img2.jpg">
+        </div>
+        <!-- 其他slide -->
+      </div>
+    </div>
+  </div>
+
+  <div class="detail">
+    <!-- 房源详情介绍 -->
+    <div class="detail">
+      <h2>房源概述</h2>
+
+      <div class="info">
+        <p>房型: <span>三居一厅</span></p>
+        <!-- 更多信息 -->
+      </div>
+
+      <div class="desc">
+        <p>该房源位于中心位置,装修典雅,采光良好...</p>
+      </div>
+      <button id="start-transfer">开始转让</button>
+      <!-- 弹窗 -->
+      <div class="popup">
+        <h3>房主信息</h3>
+        <div>名称:李先生</div>
+        <div>电话:13400001111</div>
+        <div>微信:li13400001111</div>
+
+        <h3>转让人信息</h3>
+        <input placeholder="名称">
+        <input placeholder="电话">
+        <input placeholder="微信">
+      </div>
+    </div>
+  </div>
+
+  <div class="contact">
+    <!-- 联系我们 -->
+    <div class="contact">
+      <form>
+        <input placeholder="姓名">
+        <input placeholder="电话">
+      </form>
+      <div id="map"></div>
+    </div>
+  </div>
+</body>
+<script src="../js/more.js"></script>
+
+</html>

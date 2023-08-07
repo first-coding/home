@@ -1,0 +1,83 @@
+/* 全局样式 */
+
+body {
+    background: #fff;
+  }
+  
+  /* 轮播图 */
+  
+  .swiper,
+  .swiper-slide {
+    width: 100%;
+  }
+  
+  .swiper {
+    height: auto;
+  }
+  
+  .swiper img {
+    width: 100%;
+  }
+
+  .swiper-slide img:hover {
+    cursor: pointer;
+  }
+  
+  /* 房源概述 */
+  
+  .detail {
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  #start-transfer {
+    display: inline-block;
+    padding: 12px 24px;  
+    background: #159ce4;
+    color: white; 
+    border-radius: 4px;
+  
+    font-size: 18px;
+    cursor: pointer;
+  
+    transition: background 0.3s ease;
+  }
+  
+  #start-transfer:hover {
+    background: #137fc6;
+  }
+  
+  .popup {
+    position: fixed;
+    display: none; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* 联系区 */
+  
+  .contact form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  }
+  
+  .contact input {
+    display: block;
+    margin: 10px 0;
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px; 
+  }
+  
+  .contact label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  /* 更多样式 */
