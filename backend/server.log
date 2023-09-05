@@ -1,0 +1,35 @@
+2023-09-05 11:49:34,813 - DEBUG - Starting new HTTP connection (1): 192.168.0.104:8001
+2023-09-05 11:49:37,713 - DEBUG - Starting new HTTP connection (1): 192.168.0.104:8001
+2023-09-05 11:49:40,170 - DEBUG - Starting new HTTP connection (1): 192.168.0.104:8001
+2023-09-05 11:49:42,418 - DEBUG - Starting new HTTP connection (1): 192.168.0.104:8001
+2023-09-05 11:50:09,195 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:10809
+2023-09-05 11:50:09,198 - DEBUG - http://127.0.0.1:10809 "GET http://0.0.0.0:8001/about HTTP/1.1" 500 75
+2023-09-05 11:50:09,200 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:10809
+2023-09-05 11:50:09,202 - DEBUG - http://127.0.0.1:10809 "GET http://0.0.0.0:8001/ HTTP/1.1" 500 75
+2023-09-05 11:50:09,204 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:10809
+2023-09-05 11:50:09,206 - DEBUG - http://127.0.0.1:10809 "GET http://0.0.0.0:8001/json_example HTTP/1.1" 200 27
+2023-09-05 11:50:09,207 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:10809
+2023-09-05 11:50:09,209 - DEBUG - http://127.0.0.1:10809 "POST http://0.0.0.0:8001/json_example HTTP/1.1" 200 21
+2023-09-05 11:50:09,212 - DEBUG - Encoding detection: ascii is most likely the one.
+2023-09-05 12:20:08,372 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:10809
+2023-09-05 12:20:08,374 - DEBUG - http://127.0.0.1:10809 "GET http://0.0.0.0:8001/about HTTP/1.1" 200 10
+2023-09-05 12:20:08,378 - DEBUG - Encoding detection: ascii is most likely the one.
+2023-09-05 12:20:08,380 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:10809
+2023-09-05 12:20:08,382 - DEBUG - http://127.0.0.1:10809 "GET http://0.0.0.0:8001/ HTTP/1.1" 200 13
+2023-09-05 12:20:08,382 - DEBUG - Encoding detection: ascii is most likely the one.
+2023-09-05 12:20:08,383 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:10809
+2023-09-05 12:20:08,385 - DEBUG - http://127.0.0.1:10809 "GET http://0.0.0.0:8001/json_example HTTP/1.1" 200 27
+2023-09-05 12:20:08,386 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:10809
+2023-09-05 12:20:08,388 - DEBUG - http://127.0.0.1:10809 "POST http://0.0.0.0:8001/json_example HTTP/1.1" 200 21
+2023-09-05 12:20:08,388 - DEBUG - Encoding detection: ascii is most likely the one.
+2023-09-05 12:35:15,747 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:10809
+2023-09-05 12:35:15,749 - DEBUG - http://127.0.0.1:10809 "GET http://0.0.0.0:8001/about HTTP/1.1" 200 10
+2023-09-05 12:35:15,751 - DEBUG - Encoding detection: ascii is most likely the one.
+2023-09-05 12:35:15,752 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:10809
+2023-09-05 12:35:15,754 - DEBUG - http://127.0.0.1:10809 "GET http://0.0.0.0:8001/ HTTP/1.1" 200 28
+2023-09-05 12:35:15,756 - DEBUG - Encoding detection: ascii is most likely the one.
+2023-09-05 12:35:15,757 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:10809
+2023-09-05 12:35:15,759 - DEBUG - http://127.0.0.1:10809 "GET http://0.0.0.0:8001/json_example HTTP/1.1" 200 27
+2023-09-05 12:35:15,761 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:10809
+2023-09-05 12:35:15,762 - DEBUG - http://127.0.0.1:10809 "POST http://0.0.0.0:8001/json_example HTTP/1.1" 200 21
+2023-09-05 12:35:15,763 - DEBUG - Encoding detection: ascii is most likely the one.

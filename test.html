@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fetch Data from Server</title>
+</head>
+<body>
+    <h1>Data from Server:</h1>
+    <div id="data-container"></div>
+
+    <script>
+        // 发起GET请求
+        fetch('http://192.168.0.100:8001/')
+            .then(response => response.text())
+            .then(data => {
+                // 将服务器返回的数据显示在页面上
+                console.log(data)
+                document.getElementById('data-container').innerText = data;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+    </script>
+</body>
+</html>

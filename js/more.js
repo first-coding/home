@@ -30,19 +30,18 @@ document.addEventListener('visibilitychange', e => {
   }
 });
 
-// 获取按钮和弹窗元素
-const btn = document.getElementById('start-transfer');
+
+// 显示弹窗
+const showBtn = document.getElementById('start-transfer');
 const popup = document.querySelector('.popup');
 
-// 点击按钮显示弹窗
-btn.addEventListener('click', () => {
-  popup.style.display="block"
-})
+showBtn.addEventListener('click', () => {
+  popup.style.display = 'block';
+});
 
+// 关闭弹窗
+const confirmBtn = document.getElementById('confirm');
 
-// 点击外部关闭弹窗 
-document.body.addEventListener('click', (e) => {
-  if(!e.target.closest('.popup')) {
-    popup.style.display = 'none';
-  }
+confirmBtn.addEventListener('click', () => {
+  popup.style.display = 'none'; 
 })
